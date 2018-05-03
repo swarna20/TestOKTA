@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcases.TC001_LoginToOKTA"/>
+      <class name="testcases.TC004_UnlockAccount"/>
+      <class name="testcases.TC005_ForgotPassword"/>
+      <class name="testcases.TC003_ChangeForgotPasswordQuestion"/>
+      <class name="testcases.TC002_ChangePassword"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.TC001_LoginToOKTA">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- testcases.TC001_LoginToOKTA -->
+      <class name="testcases.TC004_UnlockAccount">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="UnlockAccount" invocation-numbers="0"/>
+          <include name="setData"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC004_UnlockAccount -->
+      <class name="testcases.TC003_ChangeForgotPasswordQuestion">
+        <methods>
+          <include name="changeForgotPasswordQuestion" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="setData"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC003_ChangeForgotPasswordQuestion -->
+      <class name="testcases.TC002_ChangePassword">
+        <methods>
+          <include name="ChangePassword" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="setData"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC002_ChangePassword -->
+      <class name="testcases.TC005_ForgotPassword">
+        <methods>
+          <include name="setData"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC005_ForgotPassword -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testcases.TC001_LoginToOKTA" />
+			<class name="testcases.TC004_UnlockAccount" />
+			<class name="testcases.TC005_ForgotPassword" />
+			<class name="testcases.TC003_ChangeForgotPasswordQuestion" />
+			<class name="testcases.TC002_ChangePassword" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
